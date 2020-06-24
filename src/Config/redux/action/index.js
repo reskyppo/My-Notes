@@ -78,7 +78,8 @@ export const getdataFromAPI = (userId) => (dispatch) => {
             if (snapshot.val() === null){
                 return null
             } else{
-                Object.keys(snapshot.val()).map(key => {
+                // eslint-disable-next-line array-callback-return
+                Object.keys(snapshot.val()).map((key) => {
                     data.push({
                         id  : key,
                         data: snapshot.val()[key]
