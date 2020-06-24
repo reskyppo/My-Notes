@@ -4,8 +4,6 @@ import './index.css';
 import App from './Containers/pages/App';
 import * as serviceWorker from './serviceWorker';
 import firebase from './Config/firebase'
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 console.log('config firebase :',firebase);
 
 ReactDOM.render(
