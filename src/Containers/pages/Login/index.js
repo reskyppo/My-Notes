@@ -34,6 +34,11 @@ class Login extends Component {
         }
     }
 
+    handleRegister = () => {
+        const {history} = this.props;
+        history.push('/register')
+    }
+
 
 
     render() {
@@ -63,7 +68,7 @@ class Login extends Component {
                         loading = {this.props.isLoading}
                     />
                     <div className = 'nav-register'>
-                        <p>Belum memiliki akun ? <a href="/register"> Daftar disini!</a> </p>
+                        <p>Belum memiliki akun ? <a href="/register" onclick = {this.handleRegister}> Daftar disini!</a> </p>
                     </div>
                 </div>
                 {/* <button>Register</button>
