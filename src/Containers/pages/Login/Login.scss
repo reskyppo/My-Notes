@@ -32,11 +32,13 @@
         color  : #654062;
         font-size: 20 px;
 
-        a{
+        .p-regist{
             text-decoration: none;
             color  : #654062;
+            margin-left: 5px;
 
             &:hover{
+                cursor: pointer;
                 color      : blueviolet;
                 font-weight: bold;
             }

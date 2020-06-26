@@ -68,7 +68,8 @@ class Login extends Component {
                         loading = {this.props.isLoading}
                     />
                     <div className = 'nav-register'>
-                        <p>Belum memiliki akun ? <a href="/register" onclick = {this.handleRegister}> Daftar disini!</a> </p>
+                        <p>Belum memiliki akun ?</p>
+                        <p className = 'p-regist' onClick = {this.handleRegister}> Daftar disini!</p>
                     </div>
                 </div>
                 {/* <button>Register</button>
